@@ -1,5 +1,6 @@
 .idea/
 node_modules/
+build/
 package-lock.json
 desktop.ini
 Thumbs.db

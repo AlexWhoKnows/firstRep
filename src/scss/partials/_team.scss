@@ -1,0 +1,52 @@
+.team{
+  background: $gray-700;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-bottom: 1rem;
+  border-radius: $rad-md;
+  &__item{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    background: $gray-400;
+    border-radius: .5rem;
+    padding: 1rem;
+    &:hover {
+      background: $gray-300;
+    }
+  }
+
+
+
+  &__info-name{
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 600;
+    //color: $primary-color;
+    &:hover{
+      color: #D16D19;
+    }
+  }
+
+  &__info-position{
+    text-align: center;
+    color: $gray-600;
+  }
+
+  @include randomavatar('', 87% 91% 98% 100%, 95% 70% 100% 80%);
+  @include randomavatar('2n+1', 59% 52% 56% 59%, 51% 67% 56% 64%);
+  @include randomavatar('3n+2', 84% 94% 72% 83%, 69% 64% 53% 70%);
+  @include randomavatar('5n+3', 73% 100% 82% 100%, 73% 70% 82% 80%);
+  @include randomavatar('7n+5', 93% 90% 85% 78%, 53% 70% 85% 68%);
+  @include randomavatar('11n+7', 68% 68% 53% 83%, 58% 98% 83% 78%);
+
+  &__avatar {
+    margin: 0 auto 1em auto;
+    display: block;
+    border: 0.15rem solid $primary-color;
+    &:hover {
+      border-color: #842029;
+    }
+  }
+}

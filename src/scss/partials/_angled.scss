@@ -1,0 +1,48 @@
+.edge--bottom {
+  @include angle(after);
+}
+
+.edge--bottom--reverse {
+  @include angle(after, true);
+}
+
+.edge--top {
+  @include angle(before);
+}
+
+.edge--top--reverse {
+  @include angle(before, true);
+}
+
+.edge--both {
+  @include angle(both);
+}
+
+.edge--both--reverse {
+  @include angle(both, true);
+}
+
+.berry {
+  background: #b52b4a;
+}
+
+.blue {
+  background: #41ade5
+}
+
+.orange {
+  background: #de6628;
+}
+
+.green {
+  background: #5e9b42;
+}
+
+// demo code below
+.block {
+  color: #fff;
+  font-family: 'Fira Sans', sans-serif;
+  margin: 0 0 200px;
+  padding: 20% 20px;
+  text-align: center;
+}
